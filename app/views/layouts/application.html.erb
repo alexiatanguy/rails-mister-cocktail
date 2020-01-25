@@ -11,12 +11,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/8003273767.js" crossorigin="anonymous"></script>
   </head>
 
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
 
   <body>
+    <%= render "shared/navbar" %>
+     <%= render "shared/header" %>
     <%= yield %>
   </body>
+
 </html>
