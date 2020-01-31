@@ -19,3 +19,23 @@
   justify-content: center;
   flex-direction: column;
 }
+
+
+.test {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+  // flex-direction: column;
+}
+
+.div-size {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+}
+
+.fonts {
+  // width: 150px;
+  font-size: 20px;
+}
