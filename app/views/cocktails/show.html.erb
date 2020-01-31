@@ -1,5 +1,22 @@
+ <br>
+ <br>
+
  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)">
   <h2> <%=  @cocktail.name %></h2>
-
   </div>
+
+<div class="container">
+  <h3> Ingredients </h3>
+  <% @cocktail.doses.each do |d| %>
+  <%= d.description %>
+  <%= d.ingredient.name %>
+    <%= link_to "delete ingredient", cocktail_dose_path(@cocktail, d), method: :delete  %>
+  <% end %>
+</div>
+
+  <%= link_to "edit", edit_cocktail_path(@cocktail)  %>
+  <br>
+  <%= link_to "add an ingredient", new_cocktail_dose_path(@cocktail)  %>
+  <br>
+
 

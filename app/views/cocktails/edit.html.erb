@@ -1,11 +1,11 @@
 <div class="card-product">
 
   <div class="card-product-infos">
-    <h2> Add a Cocktail</h2>
+    <h2> Edit <%= @cocktail.name %></h2>
   <%= simple_form_for (@cocktail) do |f| %>
   <%= f.input :name %>
-  <%= f.submit "click here to add a new cocktail"%>
+  <%= f.association :doses %>
+  <%= f.submit "click here to edit"%>
   <% end %>
   </div>
 </div>
-

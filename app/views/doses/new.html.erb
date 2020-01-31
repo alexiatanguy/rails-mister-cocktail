@@ -1,0 +1,11 @@
+<div class="card-product">
+
+  <div class="card-product-infos">
+    <h2> Add a dose </h2>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.submit "click here to edit"%>
+  <% end %>
+  </div>
+</div>
